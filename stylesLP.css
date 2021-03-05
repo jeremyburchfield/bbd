@@ -1,0 +1,89 @@
+video#bg-vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(shuttle.jpg);
+}
+
+#flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.80);
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: roboto;
+    font-variant: small-caps;
+    font-weight: 200;
+}
+
+#text a {
+    text-decoration: none;
+    font-size: 36px;
+    font-style: italic;
+    color: #008CBA;
+}
+
+#text a:hover {
+    color: #d2d2d2;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+@media screen and (max-width:1024px){
+    #wrapper{
+        width: 100%;
+    }
+    
+    #flex-wrapper{
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #text {
+        font-size: 14px;
+    }
+    
+    #text a {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+}
